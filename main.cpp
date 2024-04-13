@@ -35,8 +35,11 @@ void BitInverter(void * ptrBegin, size_t size,Function SetBits = SetRightToLeft 
         {
                 array[i] = num;
                 array[i]--;
+        }else
+        {
+            std::cout << "Invalid bit number entered. Enter it again" << '\n';
+            --i;
         }
-
     }
 
     std::sort(array,array + numOfBits);
